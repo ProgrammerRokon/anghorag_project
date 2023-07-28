@@ -1,0 +1,60 @@
+/*=============================
+Reusable Custom Classes
+==============================*/
+/*Colors start*/
+.pink{
+    color:#F40F6F;
+}
+.light_pink{
+    color:#F5CCDC;
+}
+.purple{
+    color:#471D6B;
+}
+.light_purple{
+    color:#913BDB;
+}
+/*Colors end*/
+
+.border_gray{
+    border: 0.3px solid rgba(0, 0, 0, 0.25);
+}
+.border_pink{
+    border: 1px solid #F40F6F;
+}
+/*=============================
+Reusable Custom Classes
+==============================*/
+
+/*Header start*/
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: rgb(248, 111, 169);
+}
+
+.input_color{
+    border-color: rgb(248, 111, 169) !important;
+}
+
+#cart_color{
+    background-color: rgb(244, 15, 111);
+    width: 123px;
+    height: 40px;
+}
+
+.account{
+    text-decoration: none;
+    color: black;
+}
+/*Header end*/
