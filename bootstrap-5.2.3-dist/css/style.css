@@ -58,3 +58,87 @@ Reusable Custom Classes
     color: black;
 }
 /*Header end*/
+
+/*Categories start*/
+#offer_color{
+    background-color: #471D6B;
+    font-family: 'Inter', sans-serif;
+    width: 77px;
+    height: 28px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+#seller_color{
+    background-color: #FF87A6;
+    width: 105px;
+    height: 28px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.12px;
+}
+#campaign_color{
+    background-color: #913BDB;
+    width: 98px;
+    height: 28px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.12px;
+}
+
+.categories_dropdown_toggle::after {
+    content: none;
+}
+
+.categories_bg_color{
+    background-color: rgb(245, 204, 220);
+}
+
+.categories_color{
+    color: rgb(71, 29, 107);
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .dropdown-menu li{
+        position: relative;
+    }
+    .dropdown-item:hover {
+        background-color: white;
+        color: rgb(244, 15, 111);
+    }
+    .nav-item .submenu{
+        display: none;
+        position: absolute;
+        left:100%;
+        top:-7px;
+    }
+    .nav-item .submenu-left{
+        right:100%;
+        left:auto;
+    }
+    .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+    .dropdown-menu > li:hover > .submenu{ display: block; }
+}
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-menu{
+        margin-left:0.7rem;
+        margin-right:0.7rem;
+        margin-bottom: .5rem;
+    }
+    .dropdown-item:hover {
+        background-color: white;
+        color: rgb(244, 15, 111);
+    }
+}
+/*Categories end*/
