@@ -156,3 +156,365 @@ Reusable Custom Classes
     text-align: left;
 }
 /*Banner end*/
+
+/*collapsible start*/
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.down_arrow {
+    margin-left: 90%;
+}
+
+.content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.border_collapse{
+    border-bottom: 2px solid rgb(204, 204, 204);
+}
+.collapse_label {
+    margin-top: 10px;
+}
+
+/*size start*/
+.size_btn{
+    padding: 8px 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: white;
+    margin-top: 10px;
+}
+/*size end*/
+
+/*price range start*/
+.price-input {
+    width: 100%;
+    display: flex;
+    margin: 30px 0 35px;
+}
+
+.price-input .field {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+
+.field input {
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    border: none;
+    -moz-appearance: textfield;
+    font-weight: 600;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price-input .separator {
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.slider .progress {
+    height: 100%;
+    left: 0%;
+    right: 75%;
+    position: absolute;
+    border-radius: 5px;
+    background: #FF87A6;
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #F40F6F;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #F40F6F;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.taka_sign{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 2px;
+}
+/*price range end*/
+
+/*collapsible end*/
+
+/*Reset button start*/
+.reset_btn{
+    padding: 12px 70px;
+    border: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #F40F6F;
+}
+/*Reset button end*/
+
+/* Card Design  Start*/
+.product_box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    /*padding: 15px;*/
+}
+.sale_ribbon {
+    position: absolute;
+    z-index: 1;
+}
+.cover_section {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.category_tag {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    /*background-image: url(images/sale_tag.png);*/
+    z-index: 1;
+    transform: rotate(-47.157deg);
+    font-family: Inter;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: -0.14px;
+}
+
+.cover_photo {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.favourite_icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: #FFFFFF;
+    padding: 7px 9px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.available_status {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #F37048;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    text-align: center;
+    padding: 7px;
+}
+
+.available_status img {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.available_text {
+    display: inline-block;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    word-wrap: break-word;
+}
+
+.product_description_section {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+
+.product_description_section a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.author_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0px;
+}
+
+.star {
+    display: inline-block;
+    width: 100%;
+}
+
+.price_section {
+    display: inline-block;
+    width: 100%;
+}
+
+.price_section p {
+    margin-bottom: 0px;
+}
+
+.discount_price {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+    margin-right: 15px;
+}
+
+.original_price {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #999999;
+}
+
+.discount_percentage{
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 2px;
+}
+
+.vertical_border {
+    border-left: 1px solid #F40F6F;
+    border-right: 1px solid #F40F6F;
+    margin-top: 10px;
+}
+
+.add_btn {
+    border: none;
+    background: #FFBFCD;
+    border-radius: 4px;
+    padding: 3px 10px 8px;
+}
+.add_txt {
+    color: #F40F6F;
+    font-weight: 600px!important;
+}
+
+.add_cart_btn {
+    background: #FFFFFF;
+    border: 1px solid rgb(248, 111, 169);
+    border-radius: 4px;
+    padding: 3px 10px 8px;
+    width: 103px;
+}
+/* Card Design End */
+
+/* Load More start */
+.load_btn{
+    padding: 12px 70px;
+    border: 1px solid #913BDB;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: white;
+}
+/* Load More End */
