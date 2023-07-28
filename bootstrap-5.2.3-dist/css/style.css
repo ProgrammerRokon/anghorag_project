@@ -1,7 +1,6 @@
 /*=============================
 Reusable Custom Classes
 ==============================*/
-/*Colors start*/
 .pink{
     color:#F40F6F;
 }
@@ -14,8 +13,9 @@ Reusable Custom Classes
 .light_purple{
     color:#913BDB;
 }
-/*Colors end*/
-
+.input_color{
+    border-color: rgb(248, 111, 169) !important;
+}
 .border_gray{
     border: 0.3px solid rgba(0, 0, 0, 0.25);
 }
@@ -41,10 +41,6 @@ Reusable Custom Classes
     text-align: center;
     pointer-events: none;
     color: rgb(248, 111, 169);
-}
-
-.input_color{
-    border-color: rgb(248, 111, 169) !important;
 }
 
 #cart_color{
