@@ -56,3 +56,4 @@ rangeInput.forEach((input) => {
         }
     });
 });
+

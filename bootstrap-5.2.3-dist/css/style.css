@@ -158,6 +158,12 @@ Reusable Custom Classes
 /*Banner end*/
 
 /*collapsible start*/
+.collapsible_sort-by_position{
+    position: absolute;
+    margin-left: 6.5rem;
+    z-index: 1;
+}
+
 .collapsible {
     background-color: white;
     color: black;
@@ -200,6 +206,19 @@ Reusable Custom Classes
     margin-top: 10px;
 }
 
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(244, 15, 111);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
 /*size start*/
 .size_btn{
     padding: 8px 12px;
@@ -210,6 +229,11 @@ Reusable Custom Classes
     line-height: normal;
     background-color: white;
     margin-top: 10px;
+}
+
+.size_btn:active, .size_btn:focus {
+    border: 1px solid rgb(244, 15, 111);
+    color:rgb(244, 15, 111);
 }
 /*size end*/
 
@@ -503,6 +527,10 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 4px;
     padding: 3px 10px 8px;
     width: 103px;
+}
+.cards_position{
+    position: relative;
+    margin-top: 4rem;
 }
 /* Card Design End */
 

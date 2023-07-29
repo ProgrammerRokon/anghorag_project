@@ -74,8 +74,8 @@
                                 <li class="nav-item dropdown" id="myDropdown">
                                     <a class="nav-link dropdown-toggle categories_dropdown_toggle" href="#" data-bs-toggle="dropdown" >
                                         <i class="fas fa-bars categories_color"></i>
-                                        <span class="categories_color  ms-2">Categories</span>
-                                        <img class="down_arrow" src="images/d_arrow.svg">
+                                        <span class="categories_color ms-2">Categories</span>
+                                        <i class="fas fa-chevron-down text-black down_arrow"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li> <a class="dropdown-item" href="#"> Health & Beauty &raquo; </a>
@@ -143,24 +143,9 @@
 </section>
 <!--banner end-->
 
-<!-- sort by start-->
-<div class="container">
-    <div class="row justify-content-end align-items-center">
-        <div class="col-2 d-flex justify-content-end">
-            <select name="first" id="first" class="rounded-1 input_color p-2">
-                <option value="">Sort by Latest</option>
-                <option value="latest">Latest</option>
-                <option value="price_low">Price</option>
-                <option value="price_high">Offer</option>
-            </select>
-        </div>
-    </div>
-</div>
-<!-- sort by end-->
-
-<!--Card Section Start-->
-<div class="container mt-4">
-    <div class="row justify-content-end">
+<!-- collapsible & sort by start-->
+<div class="container collapsible_sort-by_position">
+    <div class="row justify-content-between align-items-start">
         <!--collapsible Section Start-->
         <div class="col-3">
             <div class="row">
@@ -179,7 +164,7 @@
                         <input type="radio" id="eye_care" name="radio" value="Eye Care">
                         <label class="collapse_label" for="eye_care">Eye Care</label><br>
 
-                        <input type="radio" id="masks" name="masks" value="Masks">
+                        <input type="radio" id="masks" name="radio" value="Masks">
                         <label class="collapse_label" for="masks">Masks</label><br>
 
                         <input type="radio" id="personal_care" name="radio" value="Personal Care">
@@ -266,7 +251,7 @@
                 <div class="col-12">
                     <button class="collapsible border_collapse">Size</button>
                     <div class="content">
-                        <button type="button" class="rounded-1 size_btn border_pink"><span class="pink">150ml</span></button>
+                        <button type="button" class="rounded-1 size_btn border_gray"><span>150ml</span></button>
                         <button type="button" class="rounded-1 size_btn border_gray"><span>200ml</span></button>
                         <button type="button" class="rounded-1 size_btn border_gray"><span>250ml</span></button>
                         <button type="button" class="rounded-1 size_btn border_gray"><span>300ml</span></button>
@@ -290,11 +275,11 @@
                             <div class="field">
                                 <span>Price: </span>
                                 <span class="taka_sign">৳</span>
-                                <input type="number" class="input-min" value="0">
+                                <input class="input-min" value="0">
                             </div>
                             <div class="field">
                                 <span class="taka_sign">৳</span>
-                                <input type="number" class="input-max" value="2000">
+                                <input class="input-max" value="2000">
                             </div>
                         </div>
                     </div>
@@ -307,7 +292,24 @@
                 </div>
             </div>
         </div>
+        <!--collapsible Section end-->
 
+        <!-- sort by start-->
+        <div class="col-2 d-flex justify-content-end">
+            <select name="first" id="first" class="form-select rounded-1 input_color p-2">
+                <option value="">Sort by Latest</option>
+                <option value="latest">Low to High</option>
+                <option value="latest">High to Low</option>
+            </select>
+        </div>
+        <!-- sort by end-->
+    </div>
+</div>
+<!-- collapsible & sort by end-->
+
+<!--Card Section Start-->
+<div class="container cards_position">
+    <div class="row justify-content-end">
         <div class="col-9">
             <div class="row justify-content-between gy-4">
                 <!--Card-1 start-->
@@ -350,7 +352,7 @@
                                         <span class="vertical_border px-2">0</span>
                                         <i class="fas fa-plus pink ps-2"></i>
                                     </button>
-
+                                    
                                     <button class="add_btn d-flex align-items-center pt-2">
                                         <img src="images/add_icon.png">
                                         <span class="add_txt ms-2">Add</span>
